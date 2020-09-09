@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Agents\Contacts\Callbacks\**" />
+    <EmbeddedResource Remove="Agents\Contacts\Callbacks\**" />
+    <None Remove="Agents\Contacts\Callbacks\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WebApiClient.JIT" Version="1.1.4" />
+  </ItemGroup>
+
+</Project>
